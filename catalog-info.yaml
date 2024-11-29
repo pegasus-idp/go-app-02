@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+spec:
+  system: "system:default/e-commerce"
+  type:  "service"
+  lifecycle: "experimental"
+  owner:  "group:default/web-sales"
+metadata:
+  name: "go-app-02"
+  annotations:
+    github.com/project-slug: pegasus-idp/go-app-02
+    backstage.io/techdocs-ref: dir:.
+    argocd/app-name: go-app-02
+    backstage.io/kubernetes-id: "go-app-02"
+  tags:
+    - golang
+    - "service"
+    - "experimental"
+  links:
+    - url: https://go-app-02.sevira.cloud
+      title: Website
+      icon: Website
